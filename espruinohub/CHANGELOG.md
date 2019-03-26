@@ -1,4 +1,4 @@
 # Changelog
-## [1.0] - 2017-12-27
+## [1.0] - 2019-03-26
 ### Added
 - Initial Project
