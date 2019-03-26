@@ -1,8 +1,8 @@
 {
     "name": "Espruino Hub",
-    "version": "0.3.0",
+    "version": "0.1.0",
     "slug": "espruino_hub",
-    "description": "A BLE -> MQTT bridge for Raspberry Pi and other Embedded devices",
+    "description": "A BLE to MQTT bridge",
     "startup": "before",
     "boot": "auto",
     "arch": ["armhf", "armv7"],
@@ -12,7 +12,16 @@
       "only_known_devices": false,
       "http_port": 1888
     },
-    "schema": false,
+    "schema": {
+      "known_devices": "str",
+      "only_known_devices": "bool",
+      "http_port": "int",
+      "mqtt_host": "str",
+      "mqtt_options": {
+        "username": "str",
+        "password": "str"
+      }
+    },
     "host_network": true,
     "webui": "http://[HOST]:[PORT:1888]/"
   }
