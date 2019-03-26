@@ -12,16 +12,7 @@
       "only_known_devices": false,
       "http_port": 1888
     },
-    "schema": {
-      "known_devices": "str",
-      "only_known_devices": "bool",
-      "http_port": "int",
-      "mqtt_host": "str",
-      "mqtt_options": {
-        "username": "str",
-        "password": "str"
-      }
-    },
+    "schema": false,
     "host_network": true,
     "webui": "http://[HOST]:[PORT:1888]/"
   }
