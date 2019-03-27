@@ -5,16 +5,20 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN \
     set -o pipefail \
-    && echo '@3.8 http://dl-cdn.alpinelinux.org/alpine/v3.8/main' >> /etc/apk/repositories \
     && apk add --no-cache \
-        nodejs@3.8=8.14.0-r0 \
-        npm@3.8=8.14.0-r0 \
         git=2.20.1-r0 \
         python2=2.7.15-r3 \
         build-base=0.5-r1 \
         bluez=5.50-r0 \
         linux-headers=4.18.13-r1 \
         eudev-dev=3.2.7-r0
+
+RUN \
+    set -o pipefail \
+    && echo '@3.8 http://dl-cdn.alpinelinux.org/alpine/v3.8/main' >> /etc/apk/repositories \
+    && apk add --no-cache \
+        nodejs@3.8=8.14.0-r0 \
+        npm@3.8=8.14.0-r0
 
 WORKDIR /opt
 RUN git clone https://github.com/espruino/EspruinoHub espruinohub
