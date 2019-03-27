@@ -5,10 +5,10 @@
 # ==============================================================================
 export BLENO_ADVERTISING_INTERVAL=300
 export NOBLE_MULTI_ROLE=1
-declare -a options
 
 cd /opt/espruinohub || bashio::exit.nok "Could not change directory to Espruino Hub"
-echo options > config.json
+bashio::log.info "Copying configuration"
+cp /data/options.json config.json
 
 bashio::log.info "Starting Espruino Hub..."
 
