@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Hass.io Add-ons: Espruino Hub
+# Starts Espruino Hub
+# ==============================================================================
+export BLENO_ADVERTISING_INTERVAL=300
+export NOBLE_MULTI_ROLE=1
+
+cd /opt/espruinohub || bashio::exit.nok "Could not change directory to Espruino Hub"
+
+bashio::log.info "Starting Espruino Hub..."
+
+exec node index.js
