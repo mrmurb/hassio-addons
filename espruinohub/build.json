@@ -3,7 +3,7 @@
     "squash": false,
     "build_from": {
         "armhf": "hassioaddons/base-armhf:3.0.1",
-        "armv7": "hassioaddons/base-armv7:3.0.1"
+        "armv7": "hassioaddons/base-armhf:3.0.1"
     },
     "args": {}
 }
