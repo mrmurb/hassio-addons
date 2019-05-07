@@ -1,6 +1,6 @@
 {
   "name": "Espruino Hub",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "slug": "espruino_hub",
   "image": "mrmurb/image-{arch}-espruinohub",
   "description": "A BLE to MQTT bridge",
