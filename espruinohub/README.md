@@ -3,7 +3,7 @@
 This is an unofficial add-on to [EspruinoHub](https://github.com/espruino/EspruinoHub)
 
 # Configuration
-
+For complete configuration check EspruinoHub's [config.json](https://github.com/espruino/EspruinoHub/blob/master/config.json)  
 To conserve CPU time, you can limit the number of monitored bluetooth devices by explicitly configuring them:
 
 ```json
