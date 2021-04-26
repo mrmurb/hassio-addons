@@ -1,0 +1,21 @@
+{
+  "name": "walgo",
+  "version": "1.0.1",
+  "slug": "walgo",
+  "description": "It's walnutty!",
+  "arch": ["amd64"],
+  "url": "https://github.com/mrmurb/walgo",
+  "startup": "application",
+  "boot": "auto",
+  "host_dbus": true,
+  "map": ["config"],
+  "options": {
+    "mqttUrl": "mqtt://",
+    "mqttPrefix": "walgo"
+  },
+  "schema": {
+    "mqttUrl": "str",
+    "mqttPrefix": "str"
+  },
+  "image": "mrmurb/addon-walgo"
+}
